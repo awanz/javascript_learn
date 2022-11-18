@@ -14,7 +14,9 @@ console.log(firstName);
 console.log(FirstName);
 
 const phi = 3.14159265358979323846;
+// phi = 4; // error because constant cannot be reassign value
 console.log(phi);
+
 
 // var keyword is use old javascript from 1995 to 2015
 
@@ -25,3 +27,14 @@ console.log(phi);
     example:
     let first-name = "John";
 */
+
+const arrayName = ['awan', 'dina', 'juni', 'restina'];
+console.log(arrayName);
+
+arrayName[0] = 'Hermawan';
+console.log(arrayName);
+
+arrayName.push('Musa');
+console.log(arrayName);
+
+// arrayName = ['Hermawan', 'Dina', 'Juni', 'Restina']; // error because constant cannot be reassign value

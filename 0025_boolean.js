@@ -1,0 +1,1 @@
+console.log(Boolean(1 < 4)); // false

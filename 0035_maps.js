@@ -5,3 +5,6 @@ const fruits = new Map([
 ]);
 
 console.log(fruits);
+
+fruits.set("mangga", 2000);
+console.log(fruits);

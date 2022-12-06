@@ -8,3 +8,6 @@ console.log(fruits);
 
 fruits.set("mangga", 2000);
 console.log(fruits);
+
+const valueJeruk = fruits.get("jeruk");
+console.log(valueJeruk);

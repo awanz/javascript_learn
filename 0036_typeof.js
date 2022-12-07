@@ -8,3 +8,18 @@ console.log(typeof new Date()); // object
 console.log(typeof function () {}); // function
 console.log(typeof myCar); // undefined
 console.log(typeof null); // object
+
+console.log("John".constructor); // function string
+console.log((22.5).constructor); // function number
+console.log(false.constructor); // function boolean
+console.log([1,2,3,4].constructor); // function array
+console.log({name:'John', age:34}.constructor); // function object
+console.log(new Date().constructor); // function date
+console.log(function () {}.constructor); // function function
+
+function isArray(myArray) {
+    return myArray.constructor === Array;
+}
+
+console.log(isArray("John")); // false
+console.log(isArray([1,2,3,4])); // true

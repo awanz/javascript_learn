@@ -23,3 +23,11 @@ function isArray(myArray) {
 
 console.log(isArray("John")); // false
 console.log(isArray([1,2,3,4])); // true
+
+function isDate(myDate){
+    return myDate.constructor.toString().indexOf("Date") > -1;
+}
+
+console.log(isDate("October 13, 2014 11:13:00")); // false
+
+// null dan undefined memiliki value yang sama tetapi type yang berbeda
